@@ -1,0 +1,11 @@
+<p-card  class="bg-cyan-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center py-8 my-4" header="Bienvenido" subheader="Azurian" [style]="{width: '700px'}" styleClass="p-card-shadow">
+    <ng-template  pTemplate="header">
+        <div class="flex flex-wrap align-items-center justify-content-center">
+            <img alt="Card" src="assets/img/software-development.png" [style]="{'width': '300px'}">
+        </div>
+    </ng-template>
+    <p>Pulsa el boton para ver el listado de datos</p>
+    <ng-template pTemplate="footer">
+        <p-button (click)="onClick()" pButton icon="pi pi-eye" label="Show"></p-button>
+    </ng-template>
+</p-card>
